@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hi! My name is Luiz Marin and I'm an Engineer from Brazil that always loved to code! I've been fooling around with Linux Distros and Programming Languages since I was 15 years old. 
+I've been doing some projects with Python and C#, and some IoT stuff with ESP32 and Arduino for some time.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+# Why to Blog?
 
-
-[jekyll-organization]: https://github.com/jekyll
+Well, I love to learn new stuff, and I think this blog could help to document all the new stuff that I find. Also, some friends of mine are currently learning to code, and I'm more than pleased to help them initiate in this amazing endeavour, but I always find that some tutorials are too long or not direct to the point, and of course, I often need to remember some things some time :). So, I expect that this blog will be an awesome reference guide for us and for everyone that passes by.

@@ -13,3 +13,4 @@ I have experience with Python, MySQL, Flask and Docker for Web Development. Righ
 # Why this Blog?
 
 Well, I love to learn new stuff, and I think this blog could help to document all the new stuff that I find. Also, some friends of mine are currently learning to code, and I'm more than pleased to help them initiate in this amazing endeavour, but I always find that some tutorials are too long or not direct to the point, and of course, I often need to remember some things some time :). So, I expect that this blog will be an awesome reference guide for us and for everyone that passes by.
+

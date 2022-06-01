@@ -4,26 +4,11 @@ title:  "Welcome to my Blog"
 date:   2022-05-30 16:51:14 -0300
 categories: welcome
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Welcome to another developer blog! 
 
-Jekyll requires blog post files to be named according to the following format:
+Here I will post some tutorials and things that I find interesting and that I’m learning, to be a place for me and for anyone else that passes by to gather some information and remember how to solve some problems in this crazy field.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+I will also use this blog to show some of the things that I’m currently working on. By the way, you should check my [Projects][projects] page, where I will list my main projects that I’m working on. Also, feel free to take a look at my [Github][ghub] Profile and check my projects!
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[projects]: https://lgmarin.github.io/projects/
+[ghub]:   https://github.com/lgmarin

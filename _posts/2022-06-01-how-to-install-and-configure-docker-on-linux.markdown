@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Install and Configure Docker on Linux"
-date:   2022-06-01 16:00:00 -0300
+date:   2022-06-01 05:00:00 -0300
 categories: docker, containers, linux
 ---
 This article aims to explain the basics of Containers and Docker. With a tutorial on how to install and prepare to use Docker Container in a Linux and Windows Environment. 

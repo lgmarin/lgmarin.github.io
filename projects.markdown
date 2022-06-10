@@ -18,7 +18,7 @@ There is a lot of different users in the lab, on different projects (Engineering
 
 ## [Arduino Data Acquisition with Python](https://github.com/lgmarin/arduino_dataaq)
 
-Languages and Tools: [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/) ![](https://img.shields.io/badge/Arduino-informational?style=flat&logo=arduino&logoColor=white&color=#00979D)
+Languages and Tools: [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/) ![](https://img.shields.io/badge/Arduino-informational?style=flat&logo=arduino&logoColor=white&color=#00979D) ![](https://img.shields.io/badge/C-++-informational?style=flat&logo=cplusplus&logoColor=white&color=blue)
 
 Data Acquisition software developed in Python as part of my Masters in Mechanical Engineering project. I was in need of a reliable way of measuring temperature in different points. 
 

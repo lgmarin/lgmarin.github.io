@@ -8,12 +8,11 @@ This article aims to explain the basics of Containers and Docker. With a tutoria
 
 ## What is Docker and Containers? And Docker Containers? 
 
-Virtualization is far from being a new subject in the development world, and also, the same can be said about Containerization. There are some similarities on both of those approaches, but also there are some pressing differences.
+Virtualization is far from being a new subject in the development world and the same can be said about Containerization. There are some similarities on both of these approaches, but there are some differences.
 
-The main difference between a Container and a Virtual Machine can be related to the size and velocity of execution of those approaches. As the VM has a full blown Operating System running on top of a virtualized environment or a Hypervisor, a Container can be very small, as it runs on top of another Operating System over a Container Engine, with only the necessary libraries to run the application that is being containerized.
+The main difference between a Container and a Virtual Machine can be related to the size and velocity of execution. As the VM has a full blown Operating System running on top of a virtualized environment or a Hypervisor, a Container can be very small, as it runs on top of another Operating System over a Container Engine, with only the necessary libraries to run the application that is being containerized.
 
-![Docker](https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png?v=85344
-https://www.netapp.com/blog/containers-vs-vms/ "Docker vs Virtual Machine Architecture")
+[![Docker vs Virtual Machine Architecture](/images/posts/dockervscontainer.png)](https://docs.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/what-is-docker)
 
 [Docker][docker] is a platform to develop, manage and execute containers, allowing them to run those containers in different environments on different Operating Systems.
 
@@ -23,13 +22,14 @@ The binaries from Docker are widely available in all the main distributions.
 
 ### On Arch Linux or based Distros
 
-First you should check for updates and install the docker and docker-compose packages
+First you should check for updates and install the docker and docker-compose packages.
 
 {% highlight shell %}
 $ sudo pacman -Syu
 $ sudo pacman -S docker docker-compose
 {% endhighlight %}
-To allow your user to run the docker cli commands without using sudo, you should run the following command in the terminal. After running this command, you should restart your system until the alteration takes effect and you will be able to run the docker cli without the need to elevate your user privileges.
+
+To allow your user to run the docker cli commands without using sudo, just run the following command in the terminal. After that you should restart your system so the configuration takes effect and you will be able to run the docker cli without the need to elevate your user privileges.
 
 {% highlight shell %}
 $ sudo usermod -aG docker $USER
@@ -56,7 +56,7 @@ Following I will list the main command syntax that allows you to perform the mos
 
 If you wish, you can use a web browser and search for the desired image, just go to the [Docker Hub][docker-hub] page and you can see the various images that you can use for your projects. This page is also good, to look for information about the images.
 
-If you are a true brave dev you can also use your trustfull Terminal Emulator, with the following syntax by replacing the <name> for your desired image.
+If you are a true brave dev you can also use your trustful Terminal Emulator, with the following syntax by replacing the <name> for your desired image.
 
 {% highlight shell %}
 $ docker search <name>

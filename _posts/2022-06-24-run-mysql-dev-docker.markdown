@@ -35,23 +35,60 @@ To start your container, it's just a matter of running the following command. Bu
 First, we should take not that the run command will initialize the container with the options and configurations that we want. There a lot of different arguments and options, to see all of them take a look at the [Docker Reference Website][docker-refference].
 
 {% highlight shell %}
-docker run --name mysql-dev -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysqlroot -d mysql:8.0
+docker run --name mysql-dev -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysqlrootpassword -d mysql:8.0
 {% endhighlight %}
 
-In this command, we are using the option --name mysql-dev to specify the name that we want for our container. 
+In this command, we are using the option `--name mysql-dev` to specify the name that we want for our container. 
 
-The -p 3306:3306 is used to map the internal port of the container to our local network. If you want to use a different port, change to -p 4545:3306, note that the first port is the external port, that will use in our hosting system, that is being mapped to 3306, the default MySQL server port inside the container.
+The `-p 3306:3306` is used to map the internal port of the container to our local network. If you want to use a different port, change to `-p 4545:3306`, note that the first port is the external port, that will use in our hosting system, that is being mapped to `3306`, the default MySQL server port inside the container.
 
-The -e Argument, set the Environment Variables for the container, in this case, we are setting the password for the root user. If you remove the argument -e MYSQL_ROOT_PASSWORD=mysqlroot, the MySQL initialization scripts will create a default password for the root user, to find that password you could use the following command to search inside the logs for the password.
+The `-e` Argument, set the Environment Variables for the container, in this case, we are setting the password for the root user. If you remove the argument `-e MYSQL_ROOT_PASSWORD=mysqlrootpassword`, the MySQL initialization scripts will create a default password for the root user, to find that password you could use the following command to search inside the logs for the password.
 
 {% highlight shell %}
 docker logs learn-mysql-docker | grep &quot;GENERATED ROOT PASSWORD:&quot;
 {% endhighlight %}
 
-Finally, the -d mysql:8.0 argument specify the Docker image and the tag to run.
+Finally, the `-d mysql:8.0` argument specify the Docker image and the tag to run. 
 
+After running the command, the shell will return a long UUID that identifies your container. By now, you will be able to use your new MySQL server!
 
+### Entering MySQL Shell
+
+If you want to enter SQL codes directly into the MySQL shell, you should first use the following command to enter inside the container shell.
+
+{% highlight shell %}
+docker exec -it mysql-dev bash
+{% endhighlight %}
+
+To open the MySQL shell just run `mysql -u root -p` then you will be prompted for your root password, now just run you sql commands! To leave the shell just type `exit` on both shells.
+
+### Starting, Stopping or Removing the Container
+
+If you are not going to use the DB, you could stop the container with the `docker stop mysql-dev`. In another time, that you my need to run the container again, just use `docker start mysql-dev` in you terminal and you are all set.
+
+To remove the container when you don't need it anymore, just run `docker rm mysql-dev` after stopping the container. If you want to remove the container and all of the volumes associated, use `docker rm -v mysql-dev`.
+
+## Connecting to the MySQL Server
+
+To use your brand new DB, you have some options. You can use the trustworthy console shell directly inside the container, or you can use the MySQL Workbench in your host operating system.
+
+### Installing and Configuring MySQL Workbench
+
+To install the MySQL Workbench, just go to the [Downloads][wb] page and select your OS, for Arch Linux users, just run the command bellow.
+
+{% highlight shell %}
+sudo pacman -S mysql-workbench
+{% endhighlight %}
+
+Running the newly installed software, you will see at the bottom the the connection button, if you used the default port, just click on the localhost button and enter your password.
+
+IMAGE
+
+If you are using another port or want to change some settings, click on the tool icon to open the configuration window, there you will be able to set different parameters for you connection.
+
+Now you just use the `localhost:3306` in your project connection string and start developing!
 
 [docker]: https://www.docker.com/
 [docker-refference]: https://docs.docker.com/engine/reference/run/
 [mysql]: https://hub.docker.com/_/mysql?tab=tags
+[wb]: https://dev.mysql.com/downloads/workbench/

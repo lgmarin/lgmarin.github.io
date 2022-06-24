@@ -60,7 +60,7 @@ If you want to enter SQL codes directly into the MySQL shell, you should first u
 docker exec -it mysql-dev bash
 {% endhighlight %}
 
-![MySQL Shell](/images/posts/2022-06-01/dockervscontainer.png)
+![MySQL Shell](/images/posts/2022-06-24/shell.png)
 
 To open the MySQL shell just run `mysql -u root -p` then you will be prompted for your root password, now just run you sql commands! To leave the shell just type `exit` on both shells.
 
@@ -84,11 +84,15 @@ sudo pacman -S mysql-workbench
 
 Running the newly installed software, you will see at the bottom the the connection button, if you used the default port, just click on the localhost button and enter your password.
 
-IMAGE
+![MySQL Shell](/images/posts/2022-06-24/workbench.png)
 
 If you are using another port or want to change some settings, click on the tool icon to open the configuration window, there you will be able to set different parameters for you connection.
 
-Now you just use the `localhost:3306` in your project connection string and start developing!
+![MySQL Shell](/images/posts/2022-06-24/configuration.png)
+
+Now you just use the `localhost:3306` in your project connection string and start developing.
+
+Until next time, and keep coding!
 
 [docker]: https://www.docker.com/
 [docker-refference]: https://docs.docker.com/engine/reference/run/

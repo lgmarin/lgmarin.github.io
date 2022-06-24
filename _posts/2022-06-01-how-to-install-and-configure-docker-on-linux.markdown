@@ -12,7 +12,7 @@ Virtualization is far from being a new subject in the development world and the 
 
 The main difference between a Container and a Virtual Machine can be related to the size and velocity of execution. As the VM has a full blown Operating System running on top of a virtualized environment or a Hypervisor, a Container can be very small, as it runs on top of another Operating System over a Container Engine, with only the necessary libraries to run the application that is being containerized.
 
-[![Docker vs Virtual Machine Architecture](/images/posts/dockervscontainer.png)](https://docs.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/what-is-docker)
+[![Docker vs Virtual Machine Architecture](/images/posts/2022-06-01/dockervscontainer.png)](https://docs.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/what-is-docker)
 
 [Docker][docker] is a platform to develop, manage and execute containers, allowing them to run those containers in different environments on different Operating Systems.
 

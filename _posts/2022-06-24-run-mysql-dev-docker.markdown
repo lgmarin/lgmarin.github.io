@@ -60,6 +60,8 @@ If you want to enter SQL codes directly into the MySQL shell, you should first u
 docker exec -it mysql-dev bash
 {% endhighlight %}
 
+![MySQL Shell](/images/posts/2022-06-01/dockervscontainer.png)
+
 To open the MySQL shell just run `mysql -u root -p` then you will be prompted for your root password, now just run you sql commands! To leave the shell just type `exit` on both shells.
 
 ### Starting, Stopping or Removing the Container

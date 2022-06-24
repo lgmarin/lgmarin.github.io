@@ -124,7 +124,7 @@ $ docker ps -a
 
 ### Remove Containers
 
-To remove a container, run the rm command. If you want to remove it attached subvolume, you should use the argument -v.
+To remove a container, run the rm command. If you also want to remove it's attached subvolume, use the argument -v.
 
 {% highlight shell %}
 $ docker rm <container>
@@ -143,4 +143,3 @@ Until next time!
 [docker]: https://www.docker.com/
 [docker-hub]: https://hub.docker.com/search?q=
 [mysql]: https://hub.docker.com/_/mysql?tab=tags
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Install and Configure Docker on Linux"
+title:  "How to Run MySql in a Docker on a Development Environment"
 date:   2022-06-24 05:00:00 -0300
 categories: docker, containers, mysql, development
 ---
